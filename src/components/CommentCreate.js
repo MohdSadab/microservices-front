@@ -7,7 +7,7 @@ const CommentCreate = ({id}) => {
 
     const submitHandler=async ()=>{
         try {
-            const {data}= await axios.post(`http://localhost:5001/post/${id}/comment`,{content:Comment});
+            const {data}= await axios.post(`http://posts.com/post/${id}/comment`,{content:Comment});
             console.log(data,">>>")
             setComment('')
         } catch (error) {

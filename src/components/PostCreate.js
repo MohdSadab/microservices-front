@@ -7,7 +7,7 @@ const PostCreate = ({setPosts}) => {
 
     const submitHandler=async ()=>{
         try {
-            const {data}= await axios.post('http://localhost:5000/post',{title:post});
+            const {data}= await axios.post('http://posts.com/post/create',{title:post});
             setPosts(data);
             setPost('')
         } catch (error) {

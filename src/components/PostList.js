@@ -8,7 +8,7 @@ const PostList = ({setPosts,posts}) => {
         async function getPosts(){
 
             try {
-                const {data}= await axios.get('http://localhost:5002/posts');
+                const {data}= await axios.get('http://posts.com/posts');
                 setPosts(data);
             } catch (error) {
                 console.log(error);
